@@ -16,6 +16,9 @@ public class EmailRecordings : MonoBehaviour
 
     public string recipient1;
     public string recipient2;
+    public string recipient3;
+    public string recipient4;
+    public string recipient5;
 
     private void Awake()
     {
@@ -28,6 +31,9 @@ public class EmailRecordings : MonoBehaviour
         Send(defaultRecipientEmail, audioFilePath);
         Send(recipient1, audioFilePath);
         Send(recipient2, audioFilePath);
+        Send(recipient3, audioFilePath);
+        Send(recipient4, audioFilePath);
+        Send(recipient5, audioFilePath);
     }
 
     private void Send(string recipientEmail, string attachmentFilePath)

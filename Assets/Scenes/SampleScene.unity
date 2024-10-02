@@ -954,7 +954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d7b37254c1048f0b5094e1e22eea8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  col1: {r: 0.18882129, g: 0, b: 0.80784315, a: 1}
+  col1: {r: 0, g: 0.09511185, b: 1, a: 1}
   col2: {r: 0.5411765, g: 0.80784315, b: 0, a: 1}
   presentationFontSize: 350
   promptFontSize: 150
