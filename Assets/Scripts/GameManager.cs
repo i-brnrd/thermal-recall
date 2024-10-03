@@ -66,8 +66,7 @@ public class GameManager : MonoBehaviour
        
         yield return StartCoroutine(ShowFX(1.0f));
         yield return StartCoroutine(ShowRecallPrompt("Recall Green Words", col2, rec2path));
-#if !UNITY_WEBGL  // Exclude microphone recording in WebGL builds
-        // Start recording from the microphone
+#if !UNITY_WEBGL  // Don't email if WebGL; won't work 
         yield return StartCoroutine(ShowPrompt("End of task, emailing results", Color.white, listTransitionDelay));
         emailRecordings.SendEmails(rec1path);
         emailRecordings.SendEmails(rec2path);
